@@ -66,7 +66,8 @@ async def monitor():
 
 @bot.event
 async def on_ready():
-    print("機器人上線！")
+    print("=== BOT READY ===")
+    print("Logged in as", bot.user)
     monitor.start()
 
 
